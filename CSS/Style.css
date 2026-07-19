@@ -1,145 +1,83 @@
 *{
-    margin:0;
-    padding:0;
-    box-sizing:border-box;
-    font-family:Arial, sans-serif;
+  margin:0;
+  padding:0;
+  box-sizing: border-box;
+}
+.NavigationBar {
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 80px;
+    background-color: #ffffff;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    position:sticky;
+    top:0;
+    z-index: 1000;
+}
+.logo h2{
+  Font-size:30px;
+  color:rgb(103, 103, 103);
+}
+.Nav-links{
+  display:flex;
+  list-style: none;
+  gap:20px;
+}
+.Nav-links a{
+  text-decoration: none;
+  color:black;
+  font-size:18px;
+  font-weight:500;
+  transition:0.3s;
+}
+.Nav-links a:hover{
+  color:gray;
+}
+.Hero{
+  height: 100vh;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-image: url(https://i.abcnewsfe.com/a/66b6ed13-22b6-454e-a2fa-797a18e24d9f/halong-2-gty-er-241203_1733265066984_hpMain.jpg);
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+}
+.Hero h1 {
+    font-size: 50px;
+    margin-bottom: 15px;
 }
 
-/* Why Choose Us */
-
-.why-us{
-    background:#f5f5f5;
-    padding:60px 20px;
-    text-align:center;
+.Hero p {
+    font-size: 20px;
+    margin-bottom: 25px;
 }
-
-.why-us h2{
-    margin-bottom:30px;
+.Hero-Content {
+    background: rgba(0, 0, 0, 0.4);
+    padding: 40px;
+    border-radius: 10px;
 }
-
-.features{
-    display:flex;
-    justify-content:center;
-    gap:20px;
-    flex-wrap:wrap;
+.Explore-Now{
+  border:none;
+  color:white;
+  font-size:20px;
+  border-radius: 20px;
+  padding-top:10px;
+  padding-bottom:10px;
+  padding-left:30px;
+  padding-right:30px;
+  margin-top:30px;
+  background-color:rgb(3, 3, 3);
+  box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+  cursor:pointer;
+  transition: 0.3s;
 }
-
-.feature-box{
-    background:white;
-    width:260px;
-    padding:20px;
-    border-radius:10px;
-    box-shadow:0 0 10px rgba(0,0,0,0.1);
+.Explore-Now:hover{
+  background-color: rgb(36, 36, 36);
 }
-
-.feature-box h3{
-    margin-bottom:10px;
-}
-
-/* Testimonials */
-
-.testimonials{
-    padding:20px 20px;
-    text-align:center;
-}
-
-.testimonial-container{
-    display:flex;
-    justify-content:center;
-    gap:20px;
-    flex-wrap:wrap;
-    margin-top:30px;
-}
-
-.testimonial{
-    background:#ffffff;
-    width:260px;
-    padding:20px;
-    border-radius:10px;
-    box-shadow:0 0 10px rgba(0,0,0,0.1);
-}
-
-.testimonial h4{
-    margin-top:15px;
-}
-
-/* Contact */
-
-.contact{
-    background:#f5f5f5;
-    padding:60px 20px;
-    text-align:center;
-}
-
-.contact form{
-    width:400px;
-    max-width:90%;
-    margin:auto;
-}
-
-.contact input,
-.contact textarea{
-    width:100%;
-    padding:12px;
-    margin:10px 0;
-    border:1px solid #ccc;
-    border-radius:5px;
-}
-
-.contact button{
-    width:100%;
-    padding:12px;
-    background: rgb(3, 3, 3);
-    color:white;
-    border:none;
-    border-radius:5px;
-    cursor:pointer;
-    font-size:16px;
-}
-
-.contact button:hover{
-    background:rgb(36, 36, 36);
-}
-
-/* Footer */
-
-footer{
-    background:#222;
-    color:white;
-    padding:30px 20px;
-}
-
-.footer-content{
-    display:flex;
-    justify-content:space-around;
-    flex-wrap:wrap;
-}
-
-.footer-content h3{
-    margin-bottom:2px;
-}
-
-.footer-content a{
-    color:white;
-    text-decoration:none;
-    display:block;
-    margin:5px 0;
-}
-
-.footer-content a:hover{
-    text-decoration:underline;
-}
-
-footer hr{
-    margin:20px 0;
-    border:0;
-    border-top:1px solid #555;
-}
-
-.copyright{
-    text-align:center;
-
-
 *{
 margin:0;
 padding:0;
@@ -270,7 +208,6 @@ gap:20px;
     color:#ffffff;
 }
 
-}
 
 .right{
 
@@ -278,7 +215,7 @@ flex:1;
 
 display:flex;
 
-justify-content:center;
+justify-content:flex-start;
 
 animation:fadeRight 1s ease;
 
@@ -286,7 +223,8 @@ animation:fadeRight 1s ease;
 
 .glass-card{
 
- width:450px;
+ width:100%;
+    max-width:480px;
     padding:40px;
     background:#ffffff;
     backdrop-filter:blur(20px);
@@ -698,84 +636,157 @@ line-height:50px;
 font-size:16px;
 
 }
-
+}
 *{
   margin:0;
   padding:0;
   box-sizing: border-box;
 }
-.NavigationBar {
-  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 20px 80px;
-    background-color: #ffffff;
-    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
-    position:sticky;
-    top:0;
-    z-index: 1000;
-}
-.logo h2{
-  Font-size:30px;
-  color:rgb(103, 103, 103);
-}
-.Nav-links{
-  display:flex;
-  list-style: none;
-  gap:20px;
-}
-.Nav-links a{
-  text-decoration: none;
-  color:black;
-  font-size:18px;
-  font-weight:500;
-  transition:0.3s;
-}
-.Nav-links a:hover{
-  color:gray;
-}
-.Hero{
-  height: 90vh;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background-image: url(https://i.abcnewsfe.com/a/66b6ed13-22b6-454e-a2fa-797a18e24d9f/halong-2-gty-er-241203_1733265066984_hpMain.jpg);
-    background-size: cover;
-    background-position: center;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    color: white;
-}
-.Hero h1 {
-    font-size: 50px;
-    margin-bottom: 15px;
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, sans-serif;
 }
 
-.Hero p {
-    font-size: 20px;
-    margin-bottom: 25px;
+/* Why Choose Us */
+
+.why-us{
+    background:#f5f5f5;
+    padding:60px 20px;
+    text-align:center;
 }
-.Hero-Content {
-    background: rgba(0, 0, 0, 0.4);
-    padding: 40px;
-    border-radius: 10px;
+
+.why-us h2{
+    margin-bottom:30px;
 }
-.Explore-Now{
-  border:none;
-  color:white;
-  font-size:20px;
-  border-radius: 20px;
-  padding-top:10px;
-  padding-bottom:10px;
-  padding-left:30px;
-  padding-right:30px;
-  margin-top:30px;
-  background-color:rgb(3, 3, 3);
-  box-shadow: 0 2px 10px rgba(0,0,0,0.1);
-  cursor:pointer;
-  transition: 0.3s;
+
+.features{
+    display:flex;
+    justify-content:center;
+    gap:20px;
+    flex-wrap:wrap;
 }
-.Explore-Now:hover{
-  background-color: rgb(36, 36, 36);
+
+.feature-box{
+    background:white;
+    width:260px;
+    padding:20px;
+    border-radius:10px;
+    box-shadow:0 0 10px rgba(0,0,0,0.1);
+}
+
+.feature-box h3{
+    margin-bottom:10px;
+}
+
+/* Testimonials */
+
+.testimonials{
+    padding:20px 20px;
+    text-align:center;
+}
+
+.testimonial-container{
+    display:flex;
+    justify-content:center;
+    gap:20px;
+    flex-wrap:wrap;
+    margin-top:30px;
+}
+
+.testimonial{
+    background:#ffffff;
+    width:260px;
+    padding:20px;
+    border-radius:10px;
+    box-shadow:0 0 10px rgba(0,0,0,0.1);
+}
+
+.testimonial h4{
+    margin-top:15px;
+}
+
+/* Contact */
+
+.contact{
+    background:#f5f5f5;
+    padding:60px 20px;
+    text-align:center;
+}
+
+.contact form{
+    width:400px;
+    max-width:90%;
+    margin:auto;
+}
+
+.contact input,
+.contact textarea{
+    width:100%;
+    padding:12px;
+    margin:10px 0;
+    border:1px solid #ccc;
+    border-radius:5px;
+}
+
+.contact button{
+    width:100%;
+    padding:12px;
+    background: rgb(3, 3, 3);
+    color:white;
+    border:none;
+    border-radius:5px;
+    cursor:pointer;
+    font-size:16px;
+}
+
+.contact button:hover{
+    background:rgb(36, 36, 36);
+}
+
+/* Footer */
+footer{
+    background:#222;
+    color:white;
+    padding:30px 20px;
+}
+
+.footer-content{
+    display:flex;
+    justify-content:space-around;
+    flex-wrap:wrap;
+}
+
+.footer-content h3{
+    margin-bottom:2px;
+}
+
+.footer-content a{
+    color:white;
+    text-decoration:none;
+    display:block;
+    margin:5px 0;
+}
+
+footer hr{
+    margin:20px 0;
+    border:0;
+    border-top:1px solid #555;
+}
+
+.copyright{
+    text-align:center;
+}
+.footer-content a:hover{
+    color:#fbbf24;
+    transform:translateX(4px);
+}
+
+.copyright{
+    text-align:center;
+    margin:0;
+    font-size:14px;
+    color:#cbd5e1;
+    letter-spacing:0.4px;
 }
