@@ -1,0 +1,80 @@
+*{
+  margin:0;
+  padding:0;
+  box-sizing: border-box;
+}
+.NavigationBar {
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 80px;
+    background-color: #ffffff;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    position:sticky;
+    top:0;
+    z-index: 1000;
+}
+.logo h2{
+  Font-size:30px;
+  color:rgb(103, 103, 103);
+}
+.Nav-links{
+  display:flex;
+  list-style: none;
+  gap:20px;
+}
+.Nav-links a{
+  text-decoration: none;
+  color:black;
+  font-size:18px;
+  font-weight:500;
+  transition:0.3s;
+}
+.Nav-links a:hover{
+  color:gray;
+}
+.Hero{
+  height: 90vh;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-image: url(https://i.abcnewsfe.com/a/66b6ed13-22b6-454e-a2fa-797a18e24d9f/halong-2-gty-er-241203_1733265066984_hpMain.jpg);
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+}
+.Hero h1 {
+    font-size: 50px;
+    margin-bottom: 15px;
+}
+
+.Hero p {
+    font-size: 20px;
+    margin-bottom: 25px;
+}
+.Hero-Content {
+    background: rgba(0, 0, 0, 0.4);
+    padding: 40px;
+    border-radius: 10px;
+}
+.Explore-Now{
+  border:none;
+  color:white;
+  font-size:20px;
+  border-radius: 20px;
+  padding-top:10px;
+  padding-bottom:10px;
+  padding-left:30px;
+  padding-right:30px;
+  margin-top:30px;
+  background-color:rgb(3, 3, 3);
+  box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+  cursor:pointer;
+  transition: 0.3s;
+}
+.Explore-Now:hover{
+  background-color: rgb(36, 36, 36);
+}
